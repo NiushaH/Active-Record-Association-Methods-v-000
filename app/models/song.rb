@@ -13,9 +13,11 @@ class Song < ActiveRecord::Base
     if self.name.include?("Drake")
     else
       drake = Artist.new(name: "Drake")
-      hotline_bling = Song.new(name: "Hotline Bling")
-      hotline_bling.artist = drake
-      # R&B = Genre.new(name: "R&B")
+    end
+
+    hotline_bling = Song.new(name: "Hotline Bling")
+    hotline_bling.artist = drake
+    # R&B = Genre.new(name: "R&B")
     end
   end
 end
